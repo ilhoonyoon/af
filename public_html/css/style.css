@@ -1,0 +1,188 @@
+@charset "utf-8";
+@import url('https://webfontworld.github.io/kopus/KoPubWorldBatang.css');
+
+.kopubbatang * {
+ font-family: "KoPubWorldBatang" , serif;
+}
+/* CSS Document */
+
+#topBtn { display: none; position: fixed; bottom: 20px; right: 30px; z-index: 99; border: none; outline: none; background-color: red; color: white; padding: 15px; border-radius: 10px; font-size: 18px; }
+#topBtn:hover { background-color: #555; }
+
+header { width: 100%; height: 120px; background-color: #fefefe; }
+header #quickHeader { width: 100%; height: 40px; line-height: 40px; background-color: #d9d9d9 }
+header #quickHeader .quick_txt_wrap { width: 1400px; margin: 0 auto;  display: flex; flex-wrap: wrap; justify-content: flex-end; }
+header #quickHeader .quick_txt_wrap .txt_btn ul { display: flex; flex-wrap: wrap; }
+header #quickHeader .quick_txt_wrap .txt_btn ul li a { display: block; }
+header #quickHeader .quick_txt_wrap .txt_btn ul li a:hover { color: #F5E613;  }
+header #quickHeader .quick_txt_wrap .txt_btn ul li a::after { content: "|"; margin: 0 20px;  }
+header #quickHeader .quick_txt_wrap .txt_btn ul li:last-child a::after { content: ""; }
+
+
+header #main_header { width: 100%; height: 80px; background-color: white; z-index: 15; box-shadow: 0 4px 9px 0 rgba(0,0,0,0.2);}
+header #main_header .header_wrap { width: 1400px; margin: 0 auto; display: flex; flex-wrap: wrap; position: relative;  background-color: #fefefe;  }
+header #main_header .header_wrap .logo { width: 150px; height: 80px; margin-right: 50px; background: url("../images/logo.png") no-repeat 50% 50%; }
+header #main_header .header_wrap nav ul { display: flex; flex-wrap: wrap; }
+header #main_header .header_wrap nav ul li { height: 77px; line-height: 77px; }
+header #main_header .header_wrap nav ul li a { display: block; padding: 0 30px; font-size: 18px; color: #444444; font-weight: 700; font-family: 'KoPubWorldBatang', serif; border-bottom: 3px solid transparent;  box-sizing: border-box; }
+header #main_header .header_wrap nav ul .hover > a { border-bottom: 3px solid #000; }
+header #main_header .header_wrap nav ul li .sub_menu { display: none; width: 100%; height: 270px; background-color: white; position: absolute; z-index: 999;left: 0;top:80px; padding: 40px 0; }
+header #main_header .header_wrap nav ul li .sub_menu .menu_name_box { width: 100%; display: flex; flex-wrap: wrap; justify-content: space-between; margin-bottom: 20px; }
+header #main_header .header_wrap nav ul li .sub_menu .menu_name_box .menu_name_title { width: 25%; height: 80px; font-size: 24px; font-family: 'KoPubWorldBatang', serif; font-weight: 700; border-bottom: 3px solid red; }
+header #main_header .header_wrap nav ul li .sub_menu .menu_name_box .menu_name_article { width: 70%; font-size: 16px; line-height: 32px;  }
+header #main_header .header_wrap nav ul li .sub_menu .menu_image_submenu_box { width: 100%; display: flex; flex-wrap: wrap; justify-content: space-between; }
+header #main_header .header_wrap nav ul li .sub_menu .menu_image_submenu_box .menu_main_image { width: 25%; height: 150px; background-color: yellow; }
+header #main_header .header_wrap nav ul li .sub_menu .menu_image_submenu_box .menu_submenu { width: 70%; display: flex; flex-wrap: wrap; }
+header #main_header .header_wrap nav ul li .sub_menu .menu_image_submenu_box .menu_submenu li { width: 35%; margin-right: 15%;}
+header #main_header .header_wrap nav ul li .sub_menu .menu_image_submenu_box .menu_submenu li a { width: 100%; display: inline-flex; flex-wrap: wrap; justify-content: space-between; align-items: center;  font-size: 20px; font-family: 'KoPubWorldBatang', serif; }
+
+
+
+
+header .header_right_btn { position: absolute; top: 0; right: 0; display: flex; flex-wrap: wrap; }
+header .header_right_btn .menu_btn { width: 120px; height: 80px; line-height: 80px; text-align: center; }
+header .header_right_btn .menu_btn button { display: block; width: 100%; height: 100%; border: none; outline: none; font-size: 40px; color: #666; background-color: transparent; cursor: pointer; }
+header .header_right_btn .donation_btn { width: 180px; height: 80px; line-height: 80px; text-align: center; }
+header .header_right_btn .donation_btn a { display: block; font-size: 20px; font-weight: 700;  background-color: #d32011; color: #EBEA26; }
+
+.gnb_depth { display: none; position: absolute; top: 120px; left: 0; width: 100%; height: 350px; background-color: #CFF5FF; z-index: 10;}
+
+
+
+
+.main_image { width: 100%; height: 720px; }
+.main_image .img_box1 { width: 100%; height: 720px; background: url("../images/main1.jpg") no-repeat 0 25%; background-size: cover;  }
+.main_image .img_box1 .img_box_wrap { width: 1400px; height: 100%; margin: 0 auto; position: relative; }
+.main_image .img_box1 .img_box_wrap .main_text_box { position: absolute; top: 150px; left: 0; width: 55%; }
+.main_image .img_box1 .img_box_wrap .main_text_box .main_text_title { font-size: 58px; font-family: 'KoPubWorldBatang', serif; font-weight: 700; margin-bottom: 40px; letter-spacing: -3px; line-height: 130%; }
+.main_image .img_box1 .img_box_wrap .main_text_box .main_text_article { font-size: 20px; font-weight: 300; word-break: keep-all; margin-bottom: 60px; letter-spacing: -1px;  color: #444444; line-height: 160%;  }
+.main_image .img_box1 .img_box_wrap .main_text_box a { display: block; width: 200px; height: 60px; background-color: lightgreen; font-size: 18px; text-align: center; line-height: 60px; }
+
+.main_image .img_box2 { width: 100%; height: 720px; background: url("../images/main2.jpg") no-repeat 0 50%; background-size: cover; }
+.main_image .img_box2 .img_box_wrap { width: 1400px; height: 100%; margin: 0 auto; position: relative; }
+.main_image .img_box2 .img_box_wrap .main_text_box { position: absolute; bottom: 80px; left: 0; width: 58%; }
+.main_image .img_box2 .img_box_wrap .main_text_box .main_text_title { font-size: 56px; font-family: 'KoPubWorldBatang', serif; font-weight: 700; margin-bottom: 40px; color: #FBFF70; letter-spacing: -3px; line-height: 130%;  }
+.main_image .img_box2 .img_box_wrap .main_text_box .main_text_article { width: 95%; font-size: 20px; font-weight: 300; word-break: keep-all; margin-bottom: 60px; color: #fff; letter-spacing: -1px; line-height: 160%; }
+.main_image .img_box2 .img_box_wrap .main_text_box a { display: block; width: 200px; height: 60px; background-color: lavender; font-size: 18px; text-align: center; line-height: 60px; }
+
+
+.donation_quick_box { width: 100%; background-color: mediumaquamarine; margin-bottom: 80px; padding: 80px 0; }
+.donation_quick_box .quick_title { font-size: 36px; color: white; font-family: 'KoPubWorldBatang', serif; font-weight: 700; text-align: center; letter-spacing: -1px; line-height: 150%; margin-bottom: 40px;  }
+.donation_quick_box .quick_title .title_point { display: inline-block; background: url("../images/point.jpg") no-repeat 0 100%; color: #E59716; }
+.donation_quick_box .quick_article { font-size: 20px; color: white; font-weight: 300; text-align: center; letter-spacing: -0.5px; margin-bottom: 80px; } 
+.donation_quick_box .quick_icon_wrap { width: 1400px; margin: 0 auto; box-sizing: border-box; border: 1px solid #fff; padding: 35px; display: flex; flex-wrap: wrap; }
+.donation_quick_box .quick_icon_wrap .icon_box { width: 32%; margin-right: 2%; background-color: white; }
+.donation_quick_box .quick_icon_wrap .icon_box:last-child { margin-right: 0; }
+.donation_quick_box .quick_icon_wrap .icon_box .icon_img { width: 150px; height: 150px; margin: 30px auto 20px; border-radius: 75px; background-color: yellow; line-height: 150px; text-align: center; }
+.donation_quick_box .quick_icon_wrap .icon_box .quick_icon_txt { text-align: center; }
+
+.container .donation_information { width: 100%; background-color: #2f2f2f; }
+.container .donation_information .donation_info_wrap { width: 1400px; margin: 0 auto 160px; box-sizing: border-box; padding: 80px 0; }
+.container .donation_information .donation_info_wrap .donation_info_title { text-align: center; font-size: 36px; font-family: 'KoPubWorldBatang', serif; font-weight: 700;  color: white; margin-bottom: 30px; letter-spacing: -1px; }
+.container .donation_information .donation_info_wrap .donation_info_article { text-align: center; font-size: 20px; font-weight: 300; letter-spacing: -0.5px;  color: white; margin-bottom: 60px;  }
+.container .donation_information .donation_info_wrap .donation_root { width: 1400px; height: 480px; margin: 0 auto; position: relative; box-sizing: border-box; border: 1px solid #fff; }
+.container .donation_information .donation_info_wrap .donation_root .root_box { position: absolute; top: 200px; left: 20px; width: 200px; height: 80px; line-height: 74px; box-sizing: border-box; border: 3px solid red; background-color: white; text-align: center; font-size: 20px; }
+.container .donation_information .donation_info_wrap .donation_root .root_box1{ position: absolute; top: 200px; left: 410px; width: 250px; height: 80px; line-height: 74px; box-sizing: border-box; border: 3px solid red; background-color: white; text-align: center; font-size: 20px; }
+.container .donation_information .donation_info_wrap .donation_root .arrow_box { position: absolute; top: 200px; left: 240px; width: 150px; height: 80px; background: url("../images/arrow.png") no-repeat 0 0; background-size: cover; }
+.container .donation_information .donation_info_wrap .donation_root .arrow_txt { position: absolute; top: 140px; left: 260px; color: white; font-size: 20px; }
+.container .donation_information .donation_info_wrap .donation_root .arrow_box1 { position: absolute; top: 130px; left: 680px; width: 340px; height: 222px; background: url("../images/arrow2.png") no-repeat 0 0; background-size: cover; }
+.container .donation_information .donation_info_wrap .donation_root .arrow_txt1 { position: absolute; top: 225px; right: 410px; font-size: 20px; color: white;  }
+.container .donation_information .donation_info_wrap .donation_root .root_box2 { position: absolute; top: 75px; right: 20px; width: 340px; height: 350px; box-sizing: border-box; padding: 40px 0; display: flex; flex-wrap: wrap; flex-direction: column; justify-content: space-between; }
+.container .donation_information .donation_info_wrap .donation_root .root_box2 .accept_in { width: 100%; height: 90px; box-sizing: border-box; background-color: white; border: 4px solid red; text-align: center; line-height: 82px; font-size: 20px; }
+.container .donation_information .donation_info_wrap .donation_root .root_box2 .accept_out { width: 100%; height: 90px; box-sizing: border-box; background-color: white; border: 4px solid red; text-align: center; line-height: 82px; font-size: 20px; } 
+.container .donation_information .donation_info_wrap .donation_root_1440 { display: none; }
+
+
+.container .afg_ha { width: 100%; height: 600px; background-color:azure;  }
+.container .afg_ha .afg_wrap { width: 1400px; margin: 0 auto; }
+.container .afg_ha .afg_wrap .afg_ha_txt { width: 50%; padding-top: 80px; }
+.container .afg_ha .afg_wrap .afg_ha_txt .afg_ha_title { font-size: 36px; font-family: 'KoPubWorldBatang', serif; font-weight: 700; letter-spacing: -1px; line-height: 140%; margin-bottom: 40px; }
+.container .afg_ha .afg_wrap .afg_ha_txt .afg_ha_article { font-size: 20px; font-weight: 300; letter-spacing: -0.5px; margin-bottom: 40px; }
+.container .afg_ha .afg_wrap .afg_ha_txt a { display: block; width: 200px; height: 70px; line-height: 70px; border-radius: 35px; background-color: orange; font-size: 16px; text-align: center; }
+.container .afg_ha .afg_wrap .afg_ha_txt a:hover { background-color: #67E7DD; }
+
+.container .donation_notice { width: 100%; padding: 80px 0; }
+.container .donation_notice .donation_notice_title_box { width: 1400px; margin: 0 auto 40px; display: flex; flex-wrap: wrap; justify-content: space-between; }
+.container .donation_notice .donation_notice_title_box .notice_title { font-size: 32px; font-family: 'KoPubWorldBatang', serif; font-weight: 700; }
+.container .donation_notice .donation_notice_title_box .notice_more { font-size: 16px; align-self: flex-end; }
+.container .donation_notice .notice_list_box { width: 100%; display: flex; flex-wrap: wrap; padding: 0 2%; box-sizing: border-box; }
+.container .donation_notice .notice_list_box .notice_box { width: 19.2%; box-sizing: border-box; border: 1px solid #333; margin-right: 1%; }
+.container .donation_notice .notice_list_box .notice_box:last-child { margin-right: 0; }
+.container .donation_notice .notice_list_box .notice_box .notice_img_box { width: 100%; height: 180px; margin-bottom: 25px; background-color: #F5D91B; text-align: center; line-height: 180px; }
+.container .donation_notice .notice_list_box .notice_box .notice_title { font-size: 24px; font-weight: 700; margin-bottom: 15px; }
+.container .donation_notice .notice_list_box .notice_box .notice_article { font-size: 16px; font-weight: 300; margin-bottom: 15px; }
+
+footer { width: 100%; height: 120px; background-color: #999; }
+footer .footer_wrap { width: 1400px; margin: 0 auto; display: flex; flex-wrap: wrap; }
+footer .footer_wrap .f_left_box { width: 70%; box-sizing: border-box; padding: 25px 0; }
+footer .footer_wrap .f_left_box .f_nav { width: 100%; margin-bottom: 25px; }
+footer .footer_wrap .f_left_box .f_nav ul { display: flex; flex-wrap: wrap; }
+footer .footer_wrap .f_left_box .f_nav ul li a { display: block; padding-right: 50px; font-size: 16px; font-weight: 400;  }
+footer .footer_wrap .f_left_box .copyright { font-size: 16px; letter-spacing: -0.5px; color: #efefef; }
+
+
+.sitemap_menu_depth2 { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, .65); z-index: 999; overflow: auto; }
+.sitemap_menu_depth2 .web_menu_box { width: 1440px; height: 45%; margin: 0 auto; background: white; position: relative; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+.sitemap_menu_depth2 .web_menu_box .close_btn { position: absolute; top: 0; right: 0; width: 120px; height: 120px; line-height: 120px; text-align: center; font-size: 48px; cursor: pointer; }
+.sitemap_menu_depth2 .web_menu_box .close_btn:hover { color: red; }
+.sitemap_menu_depth2 .web_menu_box .logo { position: absolute; top: 40px; left: 40px; width: 150px; height: 80px; background: url("../images/logo.png") no-repeat 50% 50%;  }
+.sitemap_menu_depth2 .web_menu_box .sitemap_with_image { position: absolute; top: 180px; left: 40px; width: 1360px; height: 54%; padding: 15px; box-sizing: border-box; display: flex; flex-wrap: wrap; }
+.sitemap_menu_depth2 .web_menu_box .sitemap_with_image .sitemap_menu_box { width: 25%; }
+.sitemap_menu_depth2 .web_menu_box .sitemap_with_image .sitemap_menu_box li a { display: block; font-size: 14px; font-weight: 300; padding: 5px 0;  }
+.sitemap_menu_depth2 .web_menu_box .sitemap_with_image .sitemap_menu_box li:first-child { font-size: 24px; font-family: 'KoPubWorldBatang', serif; font-weight: 700; }
+.sitemap_menu_depth2 .web_menu_box .sitemap_with_image .sitemap_menu_box li:nth-child(2) { width: 50%; height: 5px; background-color: red; margin: 5px 0; }
+
+
+
+/* responsible css start */
+
+@media screen and (max-width:1600px) {
+	.container .donation_notice .notice_list_box .notice_box { width: 24.25%; }
+	.container .donation_notice .notice_list_box .notice_box:nth-child(4) { margin-right: 0; }
+	.container .donation_notice .notice_list_box .notice_box:last-child { display: none; }
+}
+
+@media screen and (max-width:1440px) {
+	header #quickHeader .quick_txt_wrap { width: 95%; }
+	header #main_header .header_wrap { width: 95%; display: flex; flex-wrap: wrap; }
+	header #main_header .header_wrap .logo { position: static; }
+	header #main_header .header_wrap nav { position: static; margin-left: 30px; }
+	
+	.main_image .img_box1 .img_box_wrap  { width: 100%; }
+	.main_image .img_box2 .img_box_wrap { width: 100%; }
+	.main_image .img_box1 .img_box_wrap .main_text_box { position: static; margin-top: 150px;  margin-left: 40px; }
+	.main_image .img_box2 .img_box_wrap .main_text_box { position: static; margin-top: 315px; margin-left: 40px; }
+	.main_image .img_box1 .img_box_wrap .main_text_box .main_text_title { font-size: 55px; }
+	.main_image .img_box1 .img_box_wrap .main_text_box .main_text_article { font-size: 18px; }
+	.main_image .img_box2 .img_box_wrap .main_text_box .main_text_title { font-size: 55px; }
+	.main_image .img_box2 .img_box_wrap .main_text_box .main_text_title br { display: none; }
+	.main_image .img_box2 .img_box_wrap .main_text_box .main_text_article { font-size: 18px; }
+	
+	
+	.donation_quick_box .quick_icon_wrap { width: 95%; }
+	.container .donation_information .donation_info_wrap { width: 95%; }
+	.container .donation_information .donation_info_wrap .donation_root { width: 95%; display: none; } /* 1440부터는 이미지로 나오게 설정하기 (목요일날 포토샵으로 만들어서!!) */
+	.container .donation_information .donation_info_wrap .donation_root_1440 { display: block; width: 100%; height: 400px; background-color: white; }
+	.container .afg_ha .afg_wrap { width: 95%; }
+	.container .donation_notice .donation_notice_title_box { width: 95%; }
+	
+	footer .footer_wrap { width: 95%; }
+	
+	.sitemap_menu_depth2 .web_menu_box { width: 100%; }
+	.sitemap_menu_depth2 .web_menu_box .logo { position: static; padding: 40px 0 0 40px; }
+	.sitemap_menu_depth2 .web_menu_box .sitemap_with_image { position: static; width: 98%; margin: 40px auto 0; }
+	}
+
+@media screen and (max-width:1280px) {
+	.main_image { height: 600px; }
+	.main_image .img_box1 { height: 600px; }
+	.main_image .img_box2 { height: 600px; }
+	.main_image .img_box1 .img_box_wrap .main_text_box { margin-top: 100px; }
+	.main_image .img_box1 .img_box_wrap .main_text_box .main_text_title { font-size: 52px; }
+	.main_image .img_box2 .img_box_wrap .main_text_box { margin-top: 200px; }
+	.main_image .img_box2 .img_box_wrap .main_text_box .main_text_title { font-size: 52px; }
+	
+	.container .donation_notice .notice_list_box .notice_box { width: 32.66%; }
+	.container .donation_notice .notice_list_box .notice_box:nth-child(3) { margin-right: 0; }
+	.container .donation_notice .notice_list_box .notice_box:nth-child(4) { display: none; }
+}

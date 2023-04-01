@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device=width" />
+        <title>무제 문서</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+    
+    <style>
+        .submenu_wrap { width: 100%; margin: 0 auto; }
+        ul.tabs { margin: 0 auto 40px; padding: 0; list-style: none; width: 50%; display: flex; flex-wrap: wrap; }
+        ul.tabs li { width: 25%; background: none; color: #222; padding: 15px 25px; cursor: pointer; box-sizing: border-box; text-align: center; }
+        ul.tabs li.current { background: #ededed; color: #222; }
+        .tab-content { display: none; background: #ededed; padding: 15px; }
+        .tab-content.current { display: inherit; }
+        
+        .sub_content_title { font-size: 24px; line-height: 160%; }
+    </style>
+    
+    <script>
+        $(document).ready(function() {
+           $('ul.tabs li').click(function() {
+               var tab_id = $(this).attr('data-tab');
+               
+               $('ul.tabs li').removeClass('current');
+               $('.tab-content').removeClass('current');
+               
+               $(this).addClass('current');
+               $("#"+tab_id).addClass('current');
+           });
+        });
+    </script>
+
+    <body>
+        <div class="submenu_wrap">
+            <ul class="tabs">
+                <li class="tab-link current" data-tab="tab-1">서브 컨텐츠 01</li>
+                <li class="tab-link" data-tab="tab-2">서브 컨텐츠 02</li>
+                <li class="tab-link" data-tab="tab-3">서브 컨텐츠 03</li>
+                <li class="tab-link" data-tab="tab-4">서브 컨텐츠 04</li>
+            </ul>
+            
+            <div id="tab-1" class="tab-content current">
+                <p class="sub_content_title">Lorem ipsum dolor sit amet, consectetur adipiscing elit<br/>Augue neque gravida in fermentum et sollicitudin ac</p>
+            </div>
+            
+            <div id="tab-2" class="tab-content">서브 컨텐츠 내용 2</div>
+            
+            <div id="tab-3" class="tab-content">서브 컨텐츠 내용 3</div>
+            
+            <div id="tab-4" class="tab-content">서브 컨텐츠 내용 4</div>
+        </div>
+    </body>
+</html>

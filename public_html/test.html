@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device=width" />
+        <title>무제 문서</title>
+    </head>
+
+    <style>
+        input[type="radio"] { display: none; }
+        input[type="radio"] + label { display: inline-block; padding: 20px; background: #ccc; color: #999; font-size: 16px; cursor: pointer; } 
+        input[type="radio"]:checked + label { background: #aaa; color: #000; }
+        
+        .content_box { width: 500px; height: 600px; background: #aaa; margin: 0 auto; display: none; }
+        input[id="tab01"]:checked ~ .con1 { display: block; }
+        input[id="tab02"]:checked ~ .con2 { display: block; }
+        input[id="tab03"]:checked ~ .con3 { display: block; }
+        input[id="tab04"]:checked ~ .con4 { display: block; }
+    </style>
+    
+    <body>
+        <div class="page2_tab_content">
+            <input type="radio" name="tabmenu" id="tab01" checked>
+            <label for="tab01">서브 컨텐츠 01</label>
+            <input type="radio" name="tabmenu" id="tab02">
+            <label for="tab02">서브 컨텐츠 02</label>
+            <input type="radio" name="tabmenu" id="tab03">
+            <label for="tab03">서브 컨텐츠 03</label>
+            <input type="radio" name="tabmenu" id="tab04">
+            <label for="tab04">서브 컨텐츠 04</label>
+            
+            <div class="content_box con1">서브 컨텐츠 내용 1</div>
+            <div class="content_box con2">서브 컨텐츠 내용 2</div>
+            <div class="content_box con3">서브 컨텐츠 내용 3</div>
+            <div class="content_box con4">서브 컨텐츠 내용 4</div>
+        </div>
+        
+        
+    </body>
+</html>

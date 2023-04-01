@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+/* 내용관리 */
+#ctt {margin:10px 0;padding:20px;background:#fff}
+.ctt_admin {text-align:right}
+#ctt header h1 {position:absolute;font-size:0;line-height:0;overflow:hidden}
+#ctt_con {padding:10px 0;line-height:1.6em}
+#ctt_con img{max-width:100%;height:auto}
+.ctt_img {text-align:center}
+
+/* page1 */
+
+.content_text_box { width: 95%; margin: 0 auto 40px; }
+.content_title { font-size: 28px; margin-bottom: 20px; }
+.content_article { font-size: 20px; margin-bottom: 40px; line-height: 160%; }
+.page1_image { margin-bottom: 40px; }
+
+
+
+/* page2 */
+
+/* Style the tab */
+        .tab {
+          overflow: hidden;
+          border: 1px solid #ccc;
+          background-color: #f1f1f1;
+        }
+
+        /* Style the buttons inside the tab */
+        .tab button {
+          background-color: inherit;
+          float: left;
+          border: none;
+          outline: none;
+          cursor: pointer;
+          padding: 14px 16px;
+          transition: 0.3s;
+          font-size: 17px;
+        }
+
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+          background-color: #ddd;
+        }
+
+        /* Create an active/current tablink class */
+        .tab button.active {
+          background-color: #ccc;
+        }
+
+        /* Style the tab content */
+        .tabcontent {
+          display: none;
+          padding: 6px 12px;
+          border: 1px solid #ccc;
+          border-top: none;
+        }
